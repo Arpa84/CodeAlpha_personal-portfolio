@@ -20,14 +20,14 @@
     </nav>
 
     <section class="hero">
-        <img src="profile.jpg" class="profile" alt="Arpa Ghosh">
+        <img src="profile.jpg/profile.png" class="profile" alt="Arpa Ghosh">
         <h2>Hi I'm</h2>
         <h1>Arpa Ghosh</h1>
         <h3>Frontend Developer | Engineering Student</h3>
-        <button onclick="scrollToProjects()">View Projects</button>
+        <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View Projects</button>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section show">
         <h2>About Me</h2>
         <p style="font-size: 1.1rem; line-height: 1.6;">
             Passionate <strong style="color: #e73c7e;">engineering student</strong> who loves building 
@@ -35,7 +35,7 @@
         </p>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section show">
         <h2>Skills</h2>
         <div class="skills">
             <span>HTML</span>
@@ -46,42 +46,21 @@
         </div>
     </section>
 
-   
-    <section id="projects" class="section">
-    <h2>Projects</h2>
-    
-    <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>A personal portfolio built with HTML, CSS, and JS featuring glassmorphism design.</p>
-        <div style="margin-top: 15px;">
-            <a href="আপনার-গিথুব-লিঙ্ক-১" target="_blank" class="project-btn">View Code</a>
-            <a href="আপনার-লাইভ-লিঙ্ক-১" target="_blank" class="project-btn outline">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <h3>Office Management System</h3>
-        <p>A C++ based system to manage office records and employee data efficiently.</p>
-        <div style="margin-top: 15px;">
-            <a href="https://github.com/Arpa84/office_emp_proj" target="_blank" class="project-btn">View Code</a>
-        </div>
-    </div>
-</section>
-
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ghosharpa85@gmail.com" style="color: #e73c7e;">ghosharpa85@gmail.com</a></p>
-        <div class="social" style="margin-top: 20px;">
-            <a href="https://github.com/Arpa84" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/arpa-ghosh-06bb08382" target="_blank">LinkedIn</a>
+    <section id="projects" class="section show">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio built with HTML, CSS, and JS featuring glassmorphism design.</p>
+            <div style="margin-top: 15px;">
+                <a href="https://github.com/Arpa84/My-Portfolio" target="_blank" class="project-btn">View Code</a>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <p>© 2026 Arpa Portfolio</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
-</html>s
+</html>
